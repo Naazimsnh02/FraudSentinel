@@ -1,0 +1,31 @@
+{
+  "pr_auc": 0.003571365764108677,
+  "roc_auc": 0.5840864341192742,
+  "best_f1": 0.01585928466490573,
+  "best_f1_threshold": 1.0,
+  "routing": {
+    "recall_0.7": {
+      "threshold": 0.527101457118988,
+      "precision": 0.0018700446654067277,
+      "recall": 0.7334446299387869,
+      "flagged_frac": 0.6939222385223547
+    },
+    "recall_0.8": {
+      "threshold": 0.37710705399513245,
+      "precision": 0.0018573364142557673,
+      "recall": 0.800222593210907,
+      "flagged_frac": 0.7622820404265165
+    },
+    "recall_0.9": {
+      "threshold": 0.003013893263414502,
+      "precision": 0.0017838675748441596,
+      "recall": 0.9003895381190874,
+      "flagged_frac": 0.8930243090767671
+    }
+  },
+  "hidden": 96,
+  "epochs": 80,
+  "reverse_edges": true,
+  "layers": 3,
+  "note": "GNN baseline (GINE + reverse edges). Standalone metrics on extreme class imbalance (0.18% laundering rate, 5M tx); GNN contributes multi-hop graph-structural signals (fan-out, fan-in, cycles) complementary to tabular LightGBM."
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model binaries — download via scripts/install.sh or from HuggingFace
+models/card_fraud/*.txt
+models/card_fraud/*.joblib
+models/aml/*.txt
+models/aml/*.joblib
+models/aml/*.pt
+
+# Metrics files are small and useful to version
+!models/**/*_metrics.json
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db

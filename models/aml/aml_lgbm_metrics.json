@@ -1,0 +1,90 @@
+{
+  "domain": "aml",
+  "source": "eexzzm/IBM-Transactions-for-Anti-Money-Laundering-HI-Small-Trans",
+  "train_rows": 4062676,
+  "test_rows": 1015669,
+  "test_laundering_rate": 0.001769277195621802,
+  "pr_auc": 0.022952038863643116,
+  "roc_auc": 0.8219149838251785,
+  "routing_threshold": 1.768963856800349e-116,
+  "routing_key": "recall_0.8",
+  "thresholds": {
+    "recall_0.5": {
+      "threshold": 6.040331748274156e-23,
+      "precision": 0.01431346325308878,
+      "recall": 0.5002782415136339,
+      "flagged_frac": 0.06183904401926218
+    },
+    "recall_0.6": {
+      "threshold": 1.3650345827563389e-40,
+      "precision": 0.011373578302712161,
+      "recall": 0.6004451864218141,
+      "flagged_frac": 0.09340543031243446
+    },
+    "recall_0.7": {
+      "threshold": 1.6997473301814389e-66,
+      "precision": 0.008093363184847782,
+      "recall": 0.7000556483027268,
+      "flagged_frac": 0.15303804684400135
+    },
+    "recall_0.8": {
+      "threshold": 1.768963856800349e-116,
+      "precision": 0.004508529523343711,
+      "recall": 0.800222593210907,
+      "flagged_frac": 0.3140304567728266
+    }
+  },
+  "top_features": [
+    [
+      "rcv_in_deg",
+      73379745010.97504
+    ],
+    [
+      "snd_in_deg",
+      50720666219.73993
+    ],
+    [
+      "snd_out_deg",
+      49663847147.69203
+    ],
+    [
+      "snd_in_cnt",
+      39412277873.288734
+    ],
+    [
+      "self_loop",
+      13876926894.099625
+    ],
+    [
+      "hour",
+      13213936458.143677
+    ],
+    [
+      "rcv_in_cnt",
+      11199819639.292496
+    ],
+    [
+      "snd_out_cnt",
+      9289971439.759338
+    ],
+    [
+      "log_paid",
+      8725581054.098892
+    ],
+    [
+      "log_recv",
+      6753592488.424805
+    ],
+    [
+      "snd_out_amt_mean",
+      6238969625.241676
+    ],
+    [
+      "Payment Format",
+      4245135123.972351
+    ]
+  ],
+  "n_features": 22,
+  "best_iteration": 671,
+  "scale_pos_weight": 1200.9751479289941
+}

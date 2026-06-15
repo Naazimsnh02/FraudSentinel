@@ -1,0 +1,15 @@
+# FraudSentinel — pip requirements for AMD ROCm hackathon environment
+# Run install.sh instead of this directly — it pins starlette first.
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+httpx>=0.27.0
+lightgbm>=4.3.0
+scikit-learn>=1.4.0
+joblib>=1.3.0
+pandas>=2.1.0
+
+# Hard pins required by the ROCm base image + vLLM coexistence
+starlette>=0.40.0,<0.49.0
+protobuf<7.0.0
+numpy<2.3
